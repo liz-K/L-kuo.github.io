@@ -1,4 +1,4 @@
-## 前端程式設計Homework4 - 個人履歷表網站 https://liz-k.github.io/
+## 前端程式設計Homework4 - 個人履歷表網站 https://liz-k.github.io/resume
 
 - 結構
       
