@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8 ">
+    <meta name="viewport " content="width=device-width, initial-scale=1.0 ">
+    <meta http-equiv="X-UA-Compatible " content="ie=edge ">
+    <title>塔羅牌占卜-抽牌</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Rye&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" type="text/css" href="./baraja/css/baraja.css" />
+    <link rel="stylesheet" type="text/css" href="./baraja/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="./baraja/css/custom.css" />
+
+    <link rel="stylesheet" href="./css/cards.css">
+
+    <script type="text/javascript" src="./baraja/js/modernizr.custom.79639.js"></script>
+</head>
+
+<body>
+
+    <!-- 網頁內容 -->
+    <div class="container">
+
+        <!-- 標題 -->
+        <div>
+            <h1>Pick one!</h1>
+        </div>
+        <div>
+            <h2>
+                請先攤牌，然後用平靜的心，憑直覺選出一張牌(請點選)
+            </h2>
+            <div>
+                <button type="button" class="btn btn-dark" id="open"><h5>攤牌</h5></button>
+            </div>
+            <div class="baraja-demo">
+                <ul id="baraja-el" class="baraja-container">
+                    <li><img src="./img/tarot cards/back.jpg" alt="image1" />
+                    </li>
+                    <li><button class="card" id=00><img src="./img/tarot cards/00.jpg" alt="image2" /></button>
+                    </li>
+                    <li><button class="card" id=01><img src="./img/tarot cards/01.jpg" alt="image3" /></button>
+                    </li>
+                    <li><button class="card" id=02><img src="./img/tarot cards/02.jpg" alt="image4" /></button>
+                    </li>
+                    <li><button class="card" id=03><img src="./img/tarot cards/03.jpg" alt="image5" /></button>
+                    </li>
+                    <li><button class="card" id=04><img src="./img/tarot cards/04.jpg" alt="image6" /></button>
+                    </li>
+                    <li><button class="card" id=05><img src="./img/tarot cards/05.jpg" alt="image7" /></button>
+                    </li>
+                    <li><button class="card" id=06><img src="./img/tarot cards/06.jpg" alt="image8" /></button>
+                    </li>
+                    <li><button class="card" id=07><img src="./img/tarot cards/07.jpg" alt="image9" /></button>
+                    </li>
+                    <li><button class="card" id=08><img src="./img/tarot cards/08.jpg" alt="image10" /></button>
+                    </li>
+                    <li><button class="card" id=09><img src="./img/tarot cards/09.jpg" alt="image11" /></button>
+                    </li>
+                    <li><button class="card" id=10><img src="./img/tarot cards/10.jpg" alt="image12" /></button>
+                    </li>
+                    <li><button class="card" id=11><img src="./img/tarot cards/11.jpg" alt="image13" /></button>
+                    </li>
+                    <li><button class="card" id=12><img src="./img/tarot cards/12.jpg" alt="image14" /></button>
+                    </li>
+                    <li><button class="card" id=13><img src="./img/tarot cards/13.jpg" alt="image15" /></button>
+                    </li>
+                    <li><button class="card" id=14><img src="./img/tarot cards/14.jpg" alt="image16" /></button>
+                    </li>
+                    <li><button class="card" id=15><img src="./img/tarot cards/15.jpg" alt="image17" /></button>
+                    </li>
+                    <li><button class="card" id=16><img src="./img/tarot cards/16.jpg" alt="image18" /></button>
+                    </li>
+                    <li><button class="card" id=17><img src="./img/tarot cards/17.jpg" alt="image19" /></button>
+                    </li>
+                    <li><button class="card" id=18><img src="./img/tarot cards/18.jpg" alt="image20" /></button>
+                    </li>
+                    <li><button class="card" id=19><img src="./img/tarot cards/19.jpg" alt="image21" /></button>
+                    </li>
+                    <li><button class="card" id=20><img src="./img/tarot cards/20.jpg" alt="image22" /></button>
+                    </li>
+                    <li><button class="card" id=21><img src="./img/tarot cards/21.jpg" alt="image23" /></button>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><h5>解牌</h5></button>
+            </div>
+
+            <!-- Modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title"><input type="text" id="cardname" disabled></h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="col-sm-10">
+                                <textarea id="meaning" disabled></textarea>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a button href="cards.html">Try again!</a button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- 引用 Bootstrap 的 JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- 引用 baraja 的 JS -->
+    <script src="./baraja/js/jquery.min.js"></script>
+    <script src="./baraja/js/jquery.baraja.js"></script>
+
+    <script src="./js/cards.js"></script>
+
+</body>
+
+</html>
